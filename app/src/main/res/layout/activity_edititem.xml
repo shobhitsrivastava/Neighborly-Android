@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:text="Name:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:paddingLeft="25dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/name"
+        android:paddingLeft="25dp" />
+
+    <TextView
+        android:text="Description:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:paddingLeft="25dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/description"
+        android:paddingLeft="25dp" />
+
+    <TextView
+        android:text="Active:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:paddingLeft="25dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <RadioButton
+            android:text="YES"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/yes"
+            android:layout_marginLeft="25dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="NO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/no"
+            android:layout_marginLeft="25dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel" />
+
+        <Space android:layout_height="wrap_content"
+            android:layout_width="15dp" />
+
+        <Button
+            android:text="UPDate"
+            android:layout_height="wrap_content"
+            android:id="@+id/update"
+            android:layout_width="145dp" />
+
+    </TableRow>
+
+    <Button
+        android:text="Delete Item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteItem"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
